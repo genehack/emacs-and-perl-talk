@@ -76,9 +76,10 @@ BSD
 SunOS
 GNU/Linux
 ----
-First 
+One of the 
+first 
 "windowing" 
-system
+systems
 ----
 Comes in both 
 GUI &amp; console 
@@ -162,6 +163,10 @@ Interact with a debugger
 Manage files
 ----
 Play tetris
+----
+Debug code
+running on a
+remote server
 ----
 Run as a daemon
 ----
@@ -411,6 +416,8 @@ css-mode
 the list goes on...
 ----
 Questions?
+john sj anderson
+@genehack
 ----
 &#x270C; &#x263A; 
 ----
