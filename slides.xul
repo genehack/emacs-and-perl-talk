@@ -381,10 +381,8 @@ jrock's cperl-mode
 [[PRE:Devel::PerlySense:PRE]]
 ----
 My Emacs config
-(whoops, need to move to github!)
-----
-Emacs Lisp I use
-http://github.com/genehack/emacs-lisp
+[[PRE:http://github.com/genehack/emacs:PRE]]
+(including third party libs and apps)
 ----
 Non-perl 
 functions of note
