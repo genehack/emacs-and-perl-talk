@@ -1,0 +1,381 @@
+TITLE::Emacs + Perl
+Emacs
+----
+Perl
+----
+two great things
+that go great
+together
+----
+[[image src="images/vi-emacs.png" width="640" height="355"]]
+----
+[[EM:OK:EM]]
+let's focus on
+Emacs
+----
+Some Background
+----
+Old
+(started in 1976)
+----
+Has the 
+whipupitude 
+nature
+----
+Started life 
+as a set of macros 
+for another editor
+----
+Editor Macros
+&#8595;
+Emacs 
+----
+Predates:
+SVR0
+BSD
+SunOS
+GNU/Linux
+----
+One of the 
+first 
+"windowing" 
+systems
+----
+Comes in both 
+GUI &amp; console 
+flavors
+----
+(XEmacs has nothing 
+to do with X Windows)
+----
+Multiple forks &amp; flavors
+----
+GNU Emacs
+----
+GNU Emacs
+XEmacs
+----
+GNU Emacs
+XEmacs
+SXEmacs
+----
+GNU Emacs
+XEmacs
+SXEmacs
+VILE
+----
+GNU Emacs
+XEmacs
+SXEmacs
+VILE
+MicroEMACS
+----
+GNU Emacs
+XEmacs
+SXEmacs
+VILE
+MicroEMACS
+...
+----
+Stuff you can do
+with Emacs
+----
+Edit text
+----
+Edit text
+with 
+syntax highlighting
+----
+Compile code
+----
+"Compile" 
+can mean
+"syntax check"
+----
+Chat on IRC
+(multiple clients)
+----
+Send email
+----
+Read email
+(multiple clients)
+----
+Read and post
+to Usenet
+----
+Read and post 
+to Twitter
+----
+Read and post
+to Identi.ca
+----
+Read and post
+to Facebook
+----
+Browse the web
+----
+Run your REPL
+----
+Be psychoanalyzed
+----
+Interact with a debugger
+----
+Manage files
+----
+Play tetris
+----
+Debug code
+running on a
+remote server
+----
+Run as a daemon
+----
+Context-aware 
+input completion
+(aka "Intellisense")
+----
+Integrate with 
+CVS
+----
+Integrate with 
+SVN
+----
+Integrate with 
+Perforce
+----
+Integrate with 
+git
+----
+Integrate with 
+darcs
+----
+Integrate with 
+Hg
+----
+Integrate with 
+your oddball RCS
+of choice
+----
+Spell check
+with ispell
+----
+Spell check
+with aspell
+----
+Drive 
+grep
+----
+Drive 
+ack
+----
+Drive
+make
+----
+Drive
+$RANDOM_OTHER_PROGRAM
+that outputs parsable 
+line numbers
+----
+Talk to your RDBMS
+----
+Keep your 
+diary
+----
+Keep your 
+calendar
+----
+Plan your 
+day
+----
+Plan your 
+week
+----
+Plan your 
+life
+----
+(Google org-mode 
+for lots more)
+----
+Write 
+outlines
+----
+Create 
+presentationss
+----
+Present
+presentations
+----
+Edit files 
+on remote hosts
+----
+Edit files
+as root
+----
+Edit files
+on remote hosts
+as root
+----
+(You still need
+the passwords.)
+----
+Emulate 
+vi
+----
+Emulate
+vim
+----
+[[EM:Run:EM]]
+vim
+----
+Edit text
+[[EM:like a mofo:EM]]
+----
+Getting it
+----
+Download it
+----
+http://www.emacswiki.org/emacs/CategoryPorts
+----
+http://www.emacswiki.org
+click on 'Ports'
+----
+Build it 
+----
+In *nix-ish
+[[PRE:
+./configure --prefix=/my/emacs-23.1
+make
+make install
+:PRE]]
+----
+In Mac-ish
+[[PRE:
+./configure --with-ns
+make
+make install
+open nextstep
+:PRE]]
+Emacs.app 
+&#8595; 
+Applications
+----
+Run at least
+Emacs 23.1
+----
+"Pretest" alphas
+have been very stable
+(for me; YMMV)
+----
+[[EM:Full disclosure::EM]]
+my emacs blew up
+right after typing that
+----
+It's [[EM:alpha!:EM]]
+----
+Looks
+----
+out of the box:
+[[image src="images/1.png" width="640" height="480"]]
+----
+my fresh emacs
+[[image src="images/2.png" width="640" height="480"]]
+----
+(i'm sort of a 
+boring guy, 
+visually.)
+----
+Config
+----
+Startup file:
+[[PRE:~/.emacs.d/init.el:PRE]]
+----
+The file 
+formerly 
+known as:
+[[PRE:~/.emacs:PRE]]
+----
+Booster pack:
+emacs starter kit
+http://github.com/technomancy/emacs-starter-kit
+----
+emacs starter kit
+[[PRE:
+All the code you need to get started, 
+with an emphasis on dynamic languages. 
+:PRE]]
+----
+needs some Perl love
+----
+Paradox:
+Need to be somewhat expert to help
+By the time you're expert you want your own config
+----
+One thing you [[EM:must:EM]] do:
+[[PRE:
+(defalias 'perl-mode 'cperl-mode)
+:PRE]]
+----
+Notable Perl-specific add-ons
+----
+jrock's cperl-mode
+(Moosey!)
+----
+[[PRE:Stylish::REPL:PRE]]
+(link down ATM)
+&#x2639;
+----
+[[PRE:perl-find-library.el:PRE]]
+----
+[[PRE:pod-mode.el:PRE]]
+----
+[[PRE:prove.el:PRE]]
+----
+[[PRE:tt-mode.el:PRE]]
+----
+[[PRE:perlcritic.el:PRE]]
+----
+[[PRE:perltidy.el:PRE]]
+----
+[[PRE:flymake:PRE]]
+----
+[[PRE:Devel::PerlySense:PRE]]
+----
+My Emacs config
+[[PRE:http://github.com/genehack/emacs:PRE]]
+(including third party libs and apps)
+----
+Non-perl 
+functions of note
+----
+nxml
+RELAX NG
+[[EM:continuous:EM]] validation
+----
+macros
+----
+magit
+----
+dired
+----
+"Inferior" shells
+----
+I-do mode
+----
+Session support
+----
+YAsnippet
+----
+color-theme
+----
+browse-kill-ring
+----
+css-mode
+----
+the list goes on...
+----
+Questions?
+john sj anderson
+@genehack
+----
+&#x270C; &#x263A; 
+----
